@@ -8,10 +8,18 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <h1>Insertion Sort Time Complexity</h1>
-    <!-- Canvas element to render the chart -->
-    <canvas id="timeComplexityChart" width="800" height="400"></canvas>
-    <!-- JavaScript to generate data and plot the chart -->
-    <script src="script.js"></script>
+   
+    <div>
+        <h1>Insertion Sort Time Complexity</h1>
+        <div>
+            <label for="sizeInput">Enter a size greater than 1000 and multiple of 100:</label>
+            <input type="number" id="sizeInput">
+            <button onclick="addSize()">Add</button>
+        </div>
+        <!-- Canvas element to render the chart -->
+        <canvas id="timeComplexityChart" width="800" height="400"></canvas>
+        <!-- JavaScript to generate data and plot the chart -->
+        <script src="script.js"></script>
+    </div>
 </body>
 </html>

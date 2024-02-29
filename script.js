@@ -64,6 +64,14 @@ function plotChart(data) {
     });
 }
 
-// Generate data and plot the chart
-const data = generateData(100, 1000, 100); // Generate data for array sizes from 100 to 1000 with step 100
-plotChart(data);
+function addSize() {
+    
+    const inputElement = document.getElementById('sizeInput');
+    const elementSize = inputElement.value;
+    console.log("Entered size of the element is" + elementSize)
+
+    const data = generateData(100, elementSize, 100); // Generate data for array sizes from 100 to 1000 with step 100
+    plotChart(data);
+}
+
+
